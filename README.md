@@ -1,6 +1,6 @@
 # GPTuring
 
-[_GPTuring_](https://github.com/ZE-100/GPTuring/) is an IntelliJ IDEA plugin that helps developers work efficiently with
+[_GPTuring_](https://github.com/ZE-100/GPTuring/) - pronounced _GP-Turing_ - is an IntelliJ IDEA plugin that helps developers work efficiently with
 their code base, understand exceptions more easily, generate code automatically and much more, by providing 'chat-like'
 AI-features.
 

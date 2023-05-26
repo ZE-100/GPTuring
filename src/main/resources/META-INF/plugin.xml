@@ -16,9 +16,9 @@
     <description><![CDATA[
         <p>
             <a href="https://github.com/ZE-100/GPTuring/" target="_blank" rel="nofollow"><i>GPTuring</i></a>
-            is an IntelliJ IDEA plugin that helps developers work efficiently with their code base,
-            understand exceptions more easily, generate code automatically and much more, by providing
-            'chat-like' AI-features.
+            - pronounced <i>GP-Turing</i> - is an IntelliJ IDEA plugin that helps developers work efficiently
+            with their code base, understand exceptions more easily, generate code automatically and much more,
+            by providing 'chat-like' AI-features.
         </p>
         <p>
             And the best thing about it? <b><i>It</i> doesn't share any data!</b>
