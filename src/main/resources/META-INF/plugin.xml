@@ -1,18 +1,12 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
     <id>com.z100.gpturing.GPTuring</id>
 
-    <!-- Public plugin name should be written in Title Case.
-         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
     <name>GPTuring</name>
 
-    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+    <version>1.0.0-SNAPSHOT</version>
+
     <vendor email="z-100@users.noreply.github.com" url="https://github.com/Z-100">Z-100</vendor>
 
-    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
-         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
-         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
         <p>
             <a href="https://github.com/ZE-100/GPTuring/" target="_blank" rel="nofollow"><i>GPTuring</i></a>
@@ -54,21 +48,29 @@
         </ul>
   ]]></description>
 
-    <!-- Product and plugin compatibility requirements.
-         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <depends>com.intellij.modules.platform</depends>
 
-    <!-- Extension points defined by the plugin.
-         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
 
+        <!-- Non-light Service -->
+        <applicationService serviceInterface="com.z100.gpturing.services.RequestService"
+                serviceImplementation="com.z100.gpturing.services.impl.RequestServiceImpl"/>
+
+        <applicationService serviceImplementation="com.z100.gpturing.services.PropertiesService" />
+
+        <!-- Tool Window -->
+        <toolWindow factoryClass="com.z100.gpturing.ui.ChatToolWindowFactory"
+                    id="GPTuring"
+                    icon="AllIcons.Diff.Remove"
+                    anchor="right"
+                    secondary="false" />
     </extensions>
 
     <actions>
-        <action id="GitHub.Open.Profile"
-                class="com.z100.gpturing.GPTuring"
-                text="Open GitHub Page"
-                description="Open my profile">
+        <action id="Test.Log"
+                class="com.z100.gpturing.TestAction"
+                text="Log Something"
+                description="Lög">
 
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>

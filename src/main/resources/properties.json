@@ -1,0 +1,16 @@
+{
+  "settings": {
+    "name": "GPTuring",
+    "language": "en"
+  },
+  "translations": {
+    "token-entry-title": {
+      "en": "GPTuring - Token entry",
+      "de": "GPTuring - Token Eingabe"
+    },
+    "token-entry-description": {
+      "en": "Enter your API-token",
+      "de": "Gib dein API-token ein"
+    }
+  }
+}
