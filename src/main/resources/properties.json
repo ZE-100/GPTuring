@@ -11,6 +11,18 @@
     "token-entry-description": {
       "en": "Enter your API-token",
       "de": "Gib dein API-token ein"
+    },
+    "token-field-desc": {
+      "en": "API-token",
+      "de": "API-Token"
+    },
+    "generate-new-token-desc": {
+      "en": "Generate new token",
+      "de": "Neues Token generieren"
+    },
+    "send-token-test-desc": {
+      "en": "Send test-message",
+      "de": "Testnachricht schicken"
     }
   }
 }

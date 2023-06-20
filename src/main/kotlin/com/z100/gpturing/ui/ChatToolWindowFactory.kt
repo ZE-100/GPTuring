@@ -14,7 +14,7 @@ class ChatToolWindowFactory : ToolWindowFactory {
 
     override fun createToolWindowContent(project: Project, toolWindow: ToolWindow) {
         val toolWindowContent = ChatToolWindowContent(toolWindow)
-        val content = ContentFactory.getInstance().createContent(toolWindowContent.testPanel(), "", false)
+        val content = ContentFactory.getInstance().createContent(toolWindowContent.tokenEntryPanel(), "", false)
         toolWindow.contentManager.addContent(content)
     }
 }
